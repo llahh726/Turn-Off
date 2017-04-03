@@ -84,6 +84,55 @@
     </div><!-- /footer -->
 </div><!-- /page -->
 
+<div data-role="page" id="add_money">
+    <div data-role="header">
+        <h1>Add Money</h1>
+        <a href="#team" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back" class="ui-btn">X</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        
+        <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+                <label for="fname">Current Frozen Balance</label>
+                <label for="fname">$500.00</label>
+            </form>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+                <label for="fname">Add to Frozen Amount</label>
+                <input type="text" name="fname" id="fname">
+            </form>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+                <label for="fname">Credit Card Number</label>
+                <input type="text" name="fname" id="fname">
+            </form>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+                <label for="date">Expiration Date</label>
+                <input type="date" name="date" id="date" value=""/>   
+            </form>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+                <label for="fname">CSV</label>
+                <input type="text" name="fname" id="fname">
+            </form>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <a href="#team" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back" class="ui-btn">Add Money</a>    
+        </div>
+
+    </div>   
+</div>
+
 
 <div data-role="page" id="team">
 
