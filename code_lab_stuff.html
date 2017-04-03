@@ -62,13 +62,6 @@
 <div data-role="page" id="landing">
     <div data-role="header">
         <h1>CS 179 Home</h1>
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
-                <!-- TODO 4a: add an appropriate href value to the code below such that clicking the button will take you to the team page -->
-                <li><a href="#team">Team</a></li>
-            </ul>
-        </div>
     </div><!-- /header -->
 
     <div data-role="content">
@@ -79,7 +72,15 @@
         <a href="#team" class="ui-btn">Team</a>
     </div><!-- /content -->
 
+
     <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#landing" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#add_money">Add Money</a></li>
+            </ul>
+        </div>
+
         <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
     </div><!-- /footer -->
 </div><!-- /page -->
@@ -131,6 +132,17 @@
         </div>
 
     </div>   
+
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#add_money" class="ui-btn-active ui-state-persist">Add Money</a></li>
+            </ul>
+        </div>
+        
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
 </div>
 
 
