@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <!--update view based on the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--get jquery mobile libraries and css-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+
+
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>CS 179 Home</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                <!-- TODO 4a: add an appropriate href value to the code below such that clicking the button will take you to the team page -->
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <h1>CS 179:  Design of Useful and Usable Interactive Systems, Spring 2017</h1>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+        <a href="http://cs179.org" class="ui-btn">Course Website</a>
+        <a href="#team" class="ui-btn">Team</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="team">
+
+    <div data-role="header">
+        <h1>CS 179 Staff</h1>
+        <!-- TODO 4b: add a navigation bar to this page like the one on the Home page. Make sure that the "team" button is the active one-->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div data-role="content">
+        <h3>CS 179 staff:</h3>
+        <form class= "ui-filterable">
+            <input id="filterBasic-input" data-type = "search">
+        </form>
+        <!--TODO 2a: make the list look nicer by defining it as a listview -->
+        <!--TODO 3: make the list filterable using a data-filter -->
+        <ul  data-inset="true" data-role="listview" data-input="#filterBasic-input">
+            <li><a href="#ofra" data-transition="flow">Ofra</a></li>
+            <li><a href="">Evan</a></li>
+            <li><a href="">Joan</a></li>
+            <li><a href="">Amy</a></li>
+            <li><a href="#zeerak">Zeerak</a></li>
+        </ul>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="ofra">
+    <div data-role="header">
+        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
+        <a href="#team" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back" class="ui-btn">Back</a>
+        <h1>Ofra</h1>
+    </div>
+    <div data-role="content">
+        <h3>Ofra is the instructor for CS 179.</h3>
+        <img src="pics/t3.jpg" alt="Ofra" width="150px">
+    </div>
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div>
+
+<!--TODO 6: add a page for your studio TF, similar to the "ofra" page, and make the list in the "team" page link to it from the appropriate button -->
+
+
+<div data-role="page" id="zeerak">
+    <div data-role="header">
+        <!-- TODO 5: add a back button to the header; include the back icon on your back button -->
+        <a href="#team" data-rel="back" data-icon="ui-btn-icon-left ui-icon-back" class="ui-btn">Back</a>
+        <h1>Ofra</h1>
+    </div>
+    <div data-role="content">
+        <h3>Zeerak is the instructor for CS 179.</h3>
+        <img src="pics/t3.jpg" alt="Zeerak" width="150px">
+    </div>
+
+    <div data-role="footer">
+        <h4>visit us at <a href="http://cs179.org" target="_blank">cs179.org</a></h4>
+    </div><!-- /footer -->
+</div>
+<!--TODO 7: add a jQuery mobile page transition to the link from the "team" page to your TF page -->
+
+</body>
+</html>
