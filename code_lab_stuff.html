@@ -15,6 +15,29 @@
 
 <div data-role="page" id="home">
     <div data-role="header">
+        <h1>Log In</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <h1>Log In</h1>
+
+        <form action="/action_page.php">
+          Username:<br>
+          <input type="text" name="username"><br>
+          Password:<br>
+          <input type="password" name="password"><br><br>
+          <a href="#landing" class="ui-btn">Log In</a>
+          <a href="#signup" class="ui-btn">Sign Up</a>
+        </form>
+
+        <!-- TODO 1: make these links appear as mobile buttons using the ui-btn class -->
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="landing">
+    <div data-role="header">
         <h1>CS 179 Home</h1>
         <div data-role="navbar">
             <ul>
